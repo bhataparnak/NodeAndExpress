@@ -1,0 +1,13 @@
+extends layout
+
+block layout-content
+  div.View.UserView
+    h1.Banner Howdy, #{coffeeDetails.coffee}!
+    div.Message
+      div.Title
+        h3 Making Us the Best Coffee Brewer in the town
+        h1 Coffee Details
+      pre.Details=JSON.stringify(coffeeDetails, null, 2)
+    div.NavButtons
+      a(href="/logout")
+        div.NavButton Logout
